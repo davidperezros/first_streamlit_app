@@ -54,10 +54,3 @@ streamlit.header("The fruit_load_list contains:")
 streamlit.dataframe(my_data_rows)
 
 
-# New section to display fruityvice api response
-streamlit.header("Fruityvice Fruit Advice!")
-add_my_fruit = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('The user entered ', add_my_fruit)
-import requests 
-fruityvice_response2 = requests.get("https://fruityvice.com/api/fruit/"+"add_my_fruit")
-
